@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>广用通信</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="head">
+		<div class="head-box">
+			<div class="title">
+				<a href="index.html">本地主页</a>
+				<span></span>
+			</div>
+			<div class="login">
+				<a href="dl.html">登录</a>
+				<a href="register.html">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="search">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<span>广用通信</span>
+		<div class="search-input">
+		
+		</div>
+	</div>
+	<div class="body">
+		<div class="main">
+			<div class="content">
+				<span class="main-title">欢迎来到广用通信</span><br>
+				<p>
+					重庆广用通信技术有限责任公司,成立于2006年2月,是专门从事有线电视网络及宽带综合信息网系统集成、宽带网数据产品研制开发的高新技术科技企业。已研发出20多款产品，拥有12项发明专利、1项实用新型专利，并辅助合作企业开发一系列产品,在二层网络路由接入创新上，达到国际国内先进水平。
+				</p>
+				<p>
+					严格的质量保证，配备了业界领先的 <code style="color:rgb(200,50,100);">通信设备</code> 解决方案，交互界面美观、用户体验好。
+				</p>
+				<p>
+					
+					广用通信设备综合解决方案，为您提供优秀的<code style="color:rgb(200,50,100);">通信设备</code> ，解决各种通信上的问题，给您的信息生活带来改变。
+				</p>
+			</div>
+			<div class="login-box registershow" style="display:block;">
+				<div class="logo-box">
+					<span class="logo-title">用户注册</span>
+				</div>
+				<form>
+					<div class="form-group">
+						<input type="phone" name="phone" id="phone" placeholder="请输入手机号" required style="display: block">
+						<span class="mess" style="position:absolute;margin-top:30px;">请输入正确手机号</span>
+					</div>
+					<div class="form-group">
+						<input type="password" id="password" name="password" placeholder="请输入6-16位登录密码" maxlength="16" minlength="6" required>
+						<span class="mess" style="position:absolute;margin-top:30px;">密码需6-16位</span>
+					</div>
+					<div class="form-group">
+						<input type="text" name="name" placeholder="请输入您的真实姓名" required>
+						<span class="mess" style="position:absolute;margin-top:30px;">本站为实名制网站，请正确填写您的真实姓名。</span>
+					</div>
+					<div class="form-group">
+						<input type="text" name="idcard" placeholder="请输入正确身份证号" required>
+					</div>
+					<div class="form-group yzm-group">
+						<input type="text" name="yzm" placeholder="手机验证码" required>
+						<button onclick="setTime(this)" class="btn" id="yzm_btn">获取验证码</button>
+						<span class="mess" style="position:absolute;margin-top:0px;">请先将个人信息填写完整</span>
+					</div>
+					<div class="form-group check">
+						<input type="checkbox" name="check">
+						<span>我已阅读并同意</span><a href="用户注册协议.html" target="_blank">《用户协议》</a>
+					</div>
+					<button type="submit" class="btn" id="register">同意协议并注册</button>
+				</form>
+				<a href="dl.html" id="login">登录</a>
+				<a href="#">忘记密码？</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="clear-float"></div>
+	<div class="foot">
+		<p>
+			<a href="aboutour.html?page=1" target="_blank">关于我们</a>
+			<a href="aboutour.html?page=2" target="_blank">联系我们</a>
+			<a href="aboutour.html?page=3" target="_blank">网站声明</a>
+		</p>
+		<p><span>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=vuRtIgcupe9YKO3b_rAvpllIP-ripxhPiOQnDbRtY-JbLG1mELlm!1262072365" target="_blank">渝ICP备：15009247号-1</a></span></p>
+		<p>公司地址：重庆市九龙坡区渝城街158号附2-3-1号&nbsp;&nbsp;公司座机：023-68619100</p>
+		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010702500926" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+            <img src="images/beian.png" style="float:left;">
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">渝公网安备 50010702500926号</p>
+        </a>
+        <p>© 2006-2019 重庆广用通信技术有限责任公司</p>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript">
+	var countDown=60;
+	function setTime(val){
+		var count=$(".text_success").length;
+		if(countDown == 0){
+			val.removeAttribute("disabled"); 
+			$(val).removeClass("click");
+			$(val).text("获取验证码");
+			countDown=60;
+			return;
+		}
+		else if(count<2){
+			val.removeAttribute("disabled"); 
+			$(val).removeClass("click");
+			$(val).text("获取验证码");
+			countDown=60;
+			val.nextElementSibling.innerHTML="请先将个人信息填写完整";
+			val.nextElementSibling.className="text_default";
+			val.setCustomValidity("请先将个人信息填写完整");
+			return;
+
+		}
+		else{
+			
+			val.nextElementSibling.className="mess";
+			$(val).addClass("click");
+			val.setAttribute("disabled", true); 
+			$(val).text("重新发送"+countDown);
+			countDown--;
+		}
+		setTimeout(function(){
+			setTime(val)
+		},1000)
+	};
+
+</script>
+</html>

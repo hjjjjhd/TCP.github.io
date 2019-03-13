@@ -1,0 +1,80 @@
+html{
+	font-size: 10px;
+}
+.show-title{
+	width: 150px;
+	height:30px;
+	line-height: 30px;
+	font-size: 2.5em;
+	text-align: center;
+	border-left:5px solid rgb(15, 123, 179);
+	border-right:5px solid rgb(15, 123, 179);
+	border-radius:10px;
+	margin-top:20px;
+}
+.word{
+	font-size: 1.8em;
+	text-indent: 3em;
+	margin-top:20px;
+}
+.word a{
+	text-decoration: none;
+	margin-left:10px;
+	color:#999;
+	font-size: 0.7em;
+}
+.word a:hover{
+	text-decoration: underline;
+}
+.show-box-title{
+	width:270px;
+	font-size: 2.5em;
+	text-align: center;
+	border-left:5px solid rgb(15, 123, 179);
+	border-right:5px solid rgb(15, 123, 179);
+	border-radius:10px;
+	margin-top:50px;
+}
+.show-content{
+	width:900px;
+	margin:0 auto;
+	text-align: center;
+}
+@media screen and (max-width: 1300px){
+	.show-content{
+		width:100% !important;
+	}
+	.show-content img{
+		width:100% !important;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+.show-content strong{
+	font-size: 1.6em;
+}
+.show-content ul{
+	text-align: left;
+	font-size: 1.4em;
+}
+.show-content ul li{
+	margin-left: 2.5em;
+	margin-bottom:10px;
+}
+.show-content ul table{
+	border:1px solid #000;
+	border-collapse: collapse;
+	margin-left:50px;
+	line-height: 30px;
+	margin-bottom:50px;
+	margin-top:20px;
+}
+.show-content ul table th{
+	border:1px solid #000;
+	font-size: 1.4em;
+	min-width: 200px;
+}
+.show-content ul table td{
+	border:1px solid #000;
+	font-size: 1em;
+}

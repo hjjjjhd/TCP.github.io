@@ -1,0 +1,131 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	height:100%;
+}
+body{
+	width:100%;
+	color:#676a6c;
+}
+.main{
+	padding-bottom: 20px;
+	/*border:1px solid #000;*/
+	padding:0 10px 20px 10px;
+	max-width:800px;
+	margin:0 auto 0 auto;
+	min-height:500px;
+}
+.content{
+	width:100%;
+}
+.main-title{
+	font-size: 1.4em;
+	font-weight: 900;
+	color:inherit;
+}
+.content p{
+	font-size: 1.6em;
+	margin-top:15px;
+	color:inherit;
+	line-height: 20px;
+}
+.login-box{
+	width:100%;
+	/*border:1px solid #000;*/
+	margin-top:0px;
+	padding:0 10px 20px 10px;
+	background-color: rgb(245, 245, 245);
+}
+.logo-title{
+	font-size: 2.2em;
+	font-weight: 900;
+}
+.form-group{
+	width:100%;
+	height:40px;
+	margin-top:20px;
+	display: flex;
+	align-items: center;
+}
+.form-group input{
+	font-size: 1.4em;
+	width:100%;
+	height:100%;
+	border:none;
+	color:rgb(153, 153, 153);
+	background-color: rgb(245, 245, 245);
+	outline:none;
+	padding:10px;
+	box-shadow: 1px 1px 2px #999 inset;
+	border:1px solid #ccc;
+}
+.form-group input:focus{
+	box-shadow: 0 0 3px #000;
+}
+.btn{
+	display: flex;
+	width:100%;
+	height:40px;
+	margin-top:20px;
+	padding:10px;
+	text-align: center;
+	background-color: rgb(26, 179, 148);
+	border:none;
+	border-radius: 5px;
+	align-items:center;
+	justify-content: center;
+	color:#fff;
+	font-size: 1.6em;
+	cursor:pointer;
+}
+.btn:hover{
+	background-color: rgb(24, 166, 137);
+}
+.login-box a{
+	display: inline-block;
+	width:100%;
+	text-align: center;
+	margin-top:20px;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+.login-box a:hover{
+	color:rgb(42, 100, 177);
+}
+.yzm-group{
+	border:none;
+	display:block;
+}
+.yzm-group a{
+	color:#fff !important;
+}
+.yzm-group input{
+	width:40%;
+}
+.yzm-group>.btn{
+	margin-top:0px;
+	width:40%;
+	float:right;
+}
+@media screen and (min-width: 1000px){
+	html{
+		font-size: 10px;
+	}
+	.content{
+		width:45%;
+		float:left;
+	}
+	.content p{
+		font-size: 1.3em;
+	}
+	.login-box{
+		width:50%;
+		float:left;
+		margin-top:0;
+		margin-left:5%;
+	}
+}

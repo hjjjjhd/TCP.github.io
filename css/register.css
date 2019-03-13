@@ -1,0 +1,36 @@
+.mess{
+	color:red;
+	display:none;
+}
+.text_default{
+	color:red;
+	display: block;
+}
+.text_success{
+	color:green;
+}
+.form-group{
+	margin-top:30px;
+}
+.click{
+	background-color:rgb(182, 182, 182);
+}
+.click:hover{
+	background-color:rgb(182, 182, 182);
+}
+.check input{
+	width:20px;
+	height:20px;
+	border:none !important;
+	box-shadow: 0 0 0;
+}
+.check input:focus{
+	box-shadow: none;
+}
+.check a{
+	display: inline-block;
+	text-align: left;
+	width:80px;
+	height:100%;
+	font-size: 10px;
+}
